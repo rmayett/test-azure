@@ -10,27 +10,29 @@
     <h2>Hello [[prop1]]!</h2>
   </template>
 
-  <script>
-    /**
-     * `menu-element`
-     * Menu pagina
-     *
-     * @customElement
-     * @polymer
-     * @demo demo/index.html
-     */
-    class MenuElement extends Polymer.Element {
-      static get is() { return 'menu-element'; }
-      static get properties() {
-        return {
-          prop1: {
-            type: String,
-            value: 'menu-element'
-          }
-        };
-      }
-    }
+  <script>/**
+ * `menu-element`
+ * Menu pagina
+ *
+ * @customElement
+ * @polymer
+ * @demo demo/index.html
+ */
+class MenuElement extends Polymer.Element {
+  static get is() {
+    return 'menu-element';
+  }
 
-    window.customElements.define(MenuElement.is, MenuElement);
-  </script>
+  static get properties() {
+    return {
+      prop1: {
+        type: String,
+        value: 'menu-element'
+      }
+    };
+  }
+
+}
+
+window.customElements.define(MenuElement.is, MenuElement);</script>
 </dom-module>
