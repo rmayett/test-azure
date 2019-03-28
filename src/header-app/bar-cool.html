@@ -1,0 +1,48 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="bar-cool">
+  <template>
+    <style>
+      :host {
+        font-size: 32pt;
+      }
+      .titulos-header {
+        width: 100%;
+        display: flex;
+      }
+      .text{
+        font-family: 'Tangerine', serif;
+        font-weight: 900;
+        flex-grow: 1;
+        padding-left: 23px;
+      }
+
+    </style>
+
+    <div class="titulos-header">
+      <div class="text">
+        <span>
+          EngiBank
+        </span>
+      </div>
+    </div>
+
+  </template>
+
+  <script>
+
+    class HeaderBar extends Polymer.Element {
+      static get is() { return 'bar-cool'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: ''
+          }
+        };
+      }
+    }
+
+    window.customElements.define(HeaderBar.is, HeaderBar);
+  </script>
+</dom-module>

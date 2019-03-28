@@ -1,0 +1,7 @@
+{
+  "name": "cripto",
+  "short_name": "cripto",
+  "description": "Plataforma de Transferencias Bancarias",
+  "start_url": "/",
+  "display": "standalone"
+}
